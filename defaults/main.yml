@@ -1,0 +1,20 @@
+ipython_notebook:
+  default_notebook_password: bar
+  notebooks:
+    - user: vagrant
+      group: vagrant
+      config:
+        ip: '*'
+        port: 9999
+        profile: vagrant
+        sha1_password:
+        certfile:
+        certfile_subject: '/C=US/ST=HI/L=Honolulu/O=IT/CN={{ ansible_fqdn }}'
+        certfile_dir: '/home/vagrant/ssl/cert'
+        notebook_dir: '/home/vagrant/notebooks'
+
+env:
+  proxies:
+    http_proxy:
+    https_proxy:
+    ftp_proxy:
